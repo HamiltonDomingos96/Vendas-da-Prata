@@ -1,0 +1,50 @@
+[
+  {
+    "id": "vdp-real-01",
+    "nome": "Vestido Curto Listrado Transpassado",
+    "categoria": "vestuario",
+    "preco": 5000,
+    "preco_promocional": 3500,
+    "imagem_url": "/src/assets/images/produto_real_1.png",
+    "descricao": "Vestido curto feminino sem mangas com estampa listrada em preto e branco. Decote em V transpassado com amarração na cintura e saia fluida em modelagem evasê. Peça única com caimento impecável e acabamento refinado.",
+    "tamanhos_disponiveis": ["Peça Única"],
+    "em_destaque": true,
+    "novo": true,
+    "material": "Crepe de Viscose Leve",
+    "cor": "Preto e Branco",
+    "avaliacao": 5.0,
+    "total_avaliacoes": 18
+  },
+  {
+    "id": "vdp-real-02",
+    "nome": "Vestido Curto Frente Única com Babados",
+    "categoria": "vestuario",
+    "preco": 6000,
+    "preco_promocional": 4900,
+    "imagem_url": "/src/assets/images/produto_real_2.png",
+    "descricao": "Vestido curto de corte acinturado feminino com alças cruzadas frente única, laço delicado no busto e saia em camadas com babados volumosos estilo tiered. Peça única com toque macio e visual moderno.",
+    "tamanhos_disponiveis": ["Peça Única"],
+    "em_destaque": true,
+    "novo": true,
+    "material": "Tricoline Premium de Toque Macio",
+    "cor": "Azul Vibrante",
+    "avaliacao": 5.0,
+    "total_avaliacoes": 24
+  },
+  {
+    "id": "vdp-real-03",
+    "nome": "Vestido Skater Listrado com Patches Bordados",
+    "categoria": "vestuario",
+    "preco": 5000,
+    "preco_promocional": 3500,
+    "imagem_url": "/src/assets/images/produto_real_3.png",
+    "descricao": "Vestido curto estilo skater com alças médias confortáveis, decote quadrado estruturado e cintura marcada. Estampa em listras verticais com patches bordados contemporâneos que enriquecem o design. Peça única exclusiva.",
+    "tamanhos_disponiveis": ["Peça Única"],
+    "em_destaque": true,
+    "novo": true,
+    "material": "Algodão Estruturado Nobre",
+    "cor": "Listrado Azul e Branco",
+    "avaliacao": 4.9,
+    "total_avaliacoes": 15
+  }
+]

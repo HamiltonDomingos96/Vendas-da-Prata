@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendas da Prata - Moda & Acessórios de Luxo</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              black: '#090A0C',
+              surface: '#121417',
+              border: '#272A30',
+              silver: '#CBD5E1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-black text-neutral-100 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- Promo Top Bar -->
+  <div class="bg-neutral-900 border-b border-neutral-800 py-1.5 px-4 text-center text-xs text-neutral-300">
+    Envio rápido para Luanda e Províncias · Pedidos e Atendimento VIP no WhatsApp (+244) 955 987 042
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-40 bg-brand-black/95 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://www.dropbox.com/scl/fi/paxpvz6szzi59fxphlpdv/IMG-20261008-WA0097.jpg?rlkey=wjc1su05axc74x3uzhu68x2kb&st=mp4ndyde&raw=1" 
+             alt="Vendas da Prata Logo" 
+             class="w-11 h-11 rounded-full object-cover border border-slate-400 bg-neutral-900"
+             onerror="this.style.display='none'">
+        <div class="flex flex-col">
+          <span class="font-cinzel text-lg sm:text-xl font-bold tracking-wider text-white uppercase">Vendas da Prata</span>
+          <span class="text-[10px] tracking-widest text-slate-400 uppercase">Vestuário & Acessórios</span>
+        </div>
+      </a>
+
+      <button onclick="toggleCart()" class="relative flex items-center gap-2 px-4 py-2.5 bg-slate-100 hover:bg-white text-neutral-950 font-bold text-xs rounded-lg shadow cursor-pointer">
+        <span>Carrinho</span>
+        <span id="cart-badge" class="bg-neutral-950 text-white text-[10px] px-1.5 py-0.5 rounded-full font-mono">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 px-4 max-w-7xl mx-auto text-center space-y-6">
+    <span class="text-xs uppercase tracking-widest text-slate-400 font-semibold">Coleção 2026 · Luanda, Angola</span>
+    <h1 class="font-cinzel text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white max-w-4xl mx-auto leading-tight">
+      A Elegância do Vestuário com o Brilho da Prata Autêntica
+    </h1>
+    <p class="text-sm sm:text-base text-neutral-300 max-w-2xl mx-auto leading-relaxed">
+      Curadoria de alta costura, alfaiataria fina e acessórios elegantes da marca Vendas da Prata. 
+      Compre online e finalize diretamente com nosso atendimento no WhatsApp.
+    </p>
+    <div class="pt-2">
+      <a href="#produtos" class="inline-block px-8 py-3.5 bg-slate-100 hover:bg-white text-neutral-950 font-bold text-xs uppercase tracking-wider rounded-lg shadow-lg transition-transform active:scale-95">
+        Explorar Coleção em Destaque
+      </a>
+    </div>
+  </section>
+
+  <!-- Grade de Produtos -->
+  <section id="produtos" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center mb-10">
+      <span class="text-xs uppercase tracking-widest text-slate-400 font-medium">Catálogo Selecionado</span>
+      <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-white mt-1">Destaques da Loja (2 por linha)</h2>
+    </div>
+    <div id="product-grid" class="grid grid-cols-2 gap-3 sm:gap-6"></div>
+  </section>
+
+  <!-- Por que Comprar Conosco -->
+  <section class="py-16 px-4 max-w-7xl mx-auto border-t border-neutral-800">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
+        <h3 class="font-semibold text-white text-sm mb-2">Qualidade & Procedência Garantida</h3>
+        <p class="text-xs text-neutral-400">Padrão rigoroso de acabamento e tecidos nobres.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
+        <h3 class="font-semibold text-white text-sm mb-2">Envio Rápido para Todo País</h3>
+        <p class="text-xs text-neutral-400">Entregas em Luanda e despacho para as províncias.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-neutral-900 border border-neutral-800">
+        <h3 class="font-semibold text-white text-sm mb-2">Suporte Humanizado no WhatsApp</h3>
+        <p class="text-xs text-neutral-400">Atendimento vip no número +244 955 987 042.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-auto py-12 px-4 bg-neutral-950 border-t border-neutral-800 text-xs text-neutral-400 text-center space-y-4">
+    <p>© 2026 Vendas da Prata. Todos os direitos reservados. · Luanda, Angola</p>
+    <p>Projeto e Estratégia de E-commerce desenvolvidos por <strong class="text-white">H-Digital</strong></p>
+  </footer>
+
+  <!-- Modal Carrinho -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 bg-black/80 hidden items-center justify-end">
+    <div class="bg-brand-surface w-full max-w-full sm:max-w-md h-full p-4 sm:p-6 flex flex-col justify-between border-l border-brand-border">
+      <div class="flex items-center justify-between pb-4 border-b border-neutral-800">
+        <h3 class="font-cinzel text-base font-bold text-white">Seu Carrinho de Compras</h3>
+        <button onclick="toggleCart()" class="text-neutral-400 hover:text-white text-xl p-2">✕</button>
+      </div>
+      <div id="cart-items" class="flex-1 overflow-y-auto py-4 space-y-3"></div>
+      <div class="pt-4 border-t border-neutral-800 space-y-3 pb-safe">
+        <div class="flex justify-between font-bold text-sm">
+          <span>Total:</span>
+          <span id="cart-total" class="text-white">0 Kz</span>
+        </div>
+        <input id="cust-nome" type="text" placeholder="Nome completo *" class="w-full bg-neutral-900 border border-neutral-800 p-3 rounded text-sm sm:text-xs text-white">
+        <input id="cust-tel" type="tel" placeholder="Telefone / WhatsApp *" class="w-full bg-neutral-900 border border-neutral-800 p-3 rounded text-sm sm:text-xs text-white">
+        <input id="cust-end" type="text" placeholder="Morada de entrega (bairro, rua, residência)" class="w-full bg-neutral-900 border border-neutral-800 p-3 rounded text-sm sm:text-xs text-white">
+        <button onclick="encomendarWhatsApp()" class="w-full min-h-[46px] py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase rounded-lg shadow-lg cursor-pointer active:scale-95">
+          Encomendar Agora via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Vanilla do Carrinho & WhatsApp -->
+  <script>
+    const PRODUTOS = [
+      {
+        id: "vdp-real-01",
+        nome: "Vestido Curto Listrado Transpassado",
+        categoria: "vestuario",
+        preco: 5000,
+        preco_promocional: 3500,
+        imagem_url: "/src/assets/images/produto_real_1.png",
+        descricao: "Vestido curto feminino sem mangas com estampa listrada em preto e branco. Decote transpassado com laço na cintura."
+      },
+      {
+        id: "vdp-real-02",
+        nome: "Vestido Curto Frente Única com Babados",
+        categoria: "vestuario",
+        preco: 6000,
+        preco_promocional: 4900,
+        imagem_url: "/src/assets/images/produto_real_2.png",
+        descricao: "Vestido curto com alças cruzadas frente única, laço no busto e saia em camadas com babados."
+      },
+      {
+        id: "vdp-real-03",
+        nome: "Vestido Skater Listrado com Patches Bordados",
+        categoria: "vestuario",
+        preco: 5000,
+        preco_promocional: 3500,
+        imagem_url: "/src/assets/images/produto_real_3.png",
+        descricao: "Vestido curto estilo skater com alças médias, decote quadrado e patches bordados exclusivos."
+      }
+    ];
+
+    let carrinho = [];
+
+    function renderProdutos() {
+      const grid = document.getElementById('product-grid');
+      grid.innerHTML = PRODUTOS.map(p => {
+        const precoAtual = p.preco_promocional || p.preco;
+        return `
+          <div class="relative bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden p-3.5 sm:p-4 flex flex-col justify-between">
+            <div class="relative">
+              <img src="${p.imagem_url}" alt="${p.nome}" class="w-full h-52 sm:h-64 object-cover rounded-lg mb-3 bg-neutral-950">
+              <span class="absolute top-2 left-2 bg-amber-400 text-neutral-950 text-[10px] font-extrabold px-2 py-0.5 rounded shadow">PEÇA ÚNICA</span>
+            </div>
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">${p.categoria}</span>
+              <h4 class="font-semibold text-xs sm:text-sm text-white mt-1 leading-snug">${p.nome}</h4>
+              <div class="flex items-baseline gap-2 mt-2">
+                <span class="font-mono text-sm sm:text-base font-bold text-slate-100">${precoAtual.toLocaleString('pt-AO')} Kz</span>
+                ${p.preco_promocional ? `<span class="text-xs text-neutral-500 line-through font-mono">${p.preco.toLocaleString('pt-AO')} Kz</span>` : ''}
+              </div>
+            </div>
+            <button onclick="adicionarAoCarrinho('${p.id}')" class="mt-3 w-full py-2.5 bg-neutral-800 hover:bg-slate-200 hover:text-black text-xs font-semibold rounded-lg transition-colors cursor-pointer">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function adicionarAoCarrinho(id) {
+      const prod = PRODUTOS.find(p => p.id === id);
+      const existente = carrinho.find(item => item.id === id);
+      if (existente) existente.qtd++;
+      else carrinho.push({ id: prod.id, nome: prod.nome, preco: prod.preco_promocional || prod.preco, qtd: 1 });
+      atualizarCarrinho();
+      toggleCart(true);
+    }
+
+    function atualizarCarrinho() {
+      const badge = document.getElementById('cart-badge');
+      const itemsContainer = document.getElementById('cart-items');
+      const totalEl = document.getElementById('cart-total');
+
+      const totalItens = carrinho.reduce((s, i) => s + i.qtd, 0);
+      const totalValor = carrinho.reduce((s, i) => s + i.preco * i.qtd, 0);
+
+      badge.innerText = totalItens;
+      totalEl.innerText = totalValor.toLocaleString('pt-AO') + ' Kz';
+
+      if (carrinho.length === 0) {
+        itemsContainer.innerHTML = '<p class="text-xs text-neutral-400 text-center py-8">Seu carrinho está vazio.</p>';
+        return;
+      }
+
+      itemsContainer.innerHTML = carrinho.map((item, idx) => `
+        <div class="flex items-center justify-between p-2.5 bg-neutral-950 rounded-lg text-xs">
+          <div>
+            <strong class="text-white">${item.nome}</strong>
+            <p class="text-neutral-400">${item.qtd}x ${item.preco.toLocaleString('pt-AO')} Kz</p>
+          </div>
+          <button onclick="removerItem(${idx})" class="text-red-400 hover:underline">Remover</button>
+        </div>
+      `).join('');
+    }
+
+    function removerItem(idx) {
+      carrinho.splice(idx, 1);
+      atualizarCarrinho();
+    }
+
+    function toggleCart(forceOpen) {
+      const drawer = document.getElementById('cart-drawer');
+      if (forceOpen) {
+        drawer.classList.remove('hidden');
+        drawer.classList.add('flex');
+      } else {
+        drawer.classList.toggle('hidden');
+        drawer.classList.toggle('flex');
+      }
+    }
+
+    function encomendarWhatsApp() {
+      if (carrinho.length === 0) return alert('Seu carrinho está vazio!');
+      const nome = document.getElementById('cust-nome').value.trim();
+      const tel = document.getElementById('cust-tel').value.trim();
+      const end = document.getElementById('cust-end').value.trim();
+
+      const erros = [];
+      if (!nome) erros.push('Nome Completo');
+      if (!tel) erros.push('Número de Telefone');
+      if (!end) erros.push('Morada de Entrega');
+
+      if (erros.length > 0) {
+        alert('Atenção: É obrigatório fornecer os seguintes dados para concluir a sua encomenda:\n• ' + erros.join('\n• '));
+        return;
+      }
+
+      const total = carrinho.reduce((s, i) => s + i.preco * i.qtd, 0);
+      const lista = carrinho.map((i, idx) => `${idx + 1}. *${i.nome}* x${i.qtd} - ${(i.preco * i.qtd).toLocaleString('pt-AO')} Kz`).join('\n');
+      
+      const msg = `🛍️ *NOVA ENCOMENDA - VENDAS DA PRATA* 🛍️\n━━━━━━━━━━━━━━━━━━━━\n👤 *DADOS DO CLIENTE & ENTREGA:*\n• *Nome Completo:* ${nome}\n• *Telefone:* ${tel}\n• *Morada de Entrega:* ${end}\n\n📦 *PRODUTOS ENCOMENDADOS:*\n${lista}\n\n━━━━━━━━━━━━━━━━━━━━\n💰 *TOTAL DA ENCOMENDA: ${total.toLocaleString('pt-AO')} Kz*\n━━━━━━━━━━━━━━━━━━━━\nOlá, equipa Vendas da Prata! Enviei os meus dados acima para concluir a minha encomenda. Aguardo confirmação para prosseguirmos com a entrega. 🤝`;
+      
+      window.open(`https://wa.me/244955987042?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    window.onload = renderProdutos;
+  </script>
+</body>
+</html>

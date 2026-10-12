@@ -1,0 +1,6 @@
+{
+  "name": "Vendas da Prata - Moda & Acessórios",
+  "description": "E-commerce de luxo de vestuário e acessórios em prata com catálogo interativo e checkout WhatsApp direto. Desenvolvido para Vendas da Prata por H-Digital.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
